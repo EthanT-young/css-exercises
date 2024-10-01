@@ -19,6 +19,7 @@ button {
   border-radius: 8px;
   background: #eee;
   margin-top: 6px;
+  padding: 10px 14px;
 }
 
 input {
@@ -29,6 +30,7 @@ input {
 }
 
 ul {
+  /* should of used flex here */
   list-style-type: none;
   margin: 12px;
   padding: 0px; 
@@ -49,17 +51,20 @@ a:any-link {
 .header, .footer {
   display: flex; 
   justify-content: space-between;
+  padding: 5px;
 }
 
 .footer {
   align-content: flex-end;
+  background: #eee;
 }
 
 
 .content {
-  display: flex;
   flex: auto;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 12px;
 }
